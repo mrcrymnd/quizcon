@@ -12,27 +12,47 @@
 </head>
 <body style="background-color: #eee;">
 <div class="container-fluid" style="padding: 2rem;">
- 
-<form>
-
-
+	<div class="alert alert-danger d-flex align-items-center" role="alert">
+		<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill" /></svg> 
+		<div>
+			<strong>Oops!</strong> Please answer all the questions. 
+		</div>
+	</div>
+	<form>
 		<div id="q01" class="question border bg-light" style="padding: 2rem;margin-top: 2rem;">
+		<p class="text-danger">Please make a selection.</p>
 			<p>
 				1. What planet lacks an internal magnetic field? 
 			</p>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" disabled>
+				<input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" required>
 				<label class="form-check-label" for="flexRadioDefault1"> Jupiter </label> 
-                <!--<input type="range" class="form-range" min="0" max="5" step="0.5" id="range01" disabled>-->
+				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range01">
+				<div class="row">
+					<div class="col text-muted">
+						<small>Certain</small> 
+					</div>
+					<div class="col text-end text-muted">
+						<small>Uncertain</small> 
+					</div>
+				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" disabled>
-				<label class="form-check-label" for="flexRadioDefault2"> Mercury </label> 
-                <!--<input type="range" class="form-range" min="0" max="5" step="0.5" id="range02" disabled>-->
+				<input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+				<label class="form-check-label" for="flexRadioDefault1"> Mercury </label> 
+				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range02">
+				<div class="row">
+					<div class="col text-muted">
+						<small>Certain</small> 
+					</div>
+					<div class="col text-end text-muted">
+						<small>Uncertain</small> 
+					</div>
+				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" checked>
-				<label class="form-check-label" for="flexRadioDefault3"> Venus </label> 
+				<input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+				<label class="form-check-label" for="flexRadioDefault1"> Venus </label> 
 				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range03">
 				<div class="row">
 					<div class="col text-muted">
@@ -44,30 +64,43 @@
 				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4" disabled>
-				<label class="form-check-label" for="flexRadioDefault4"> I don't know. </label> 
+				<input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4">
+				<label class="form-check-label" for="flexRadioDefault1"> I don't know. </label> 
 			</div>
 		</div>
-		
-		
-		
 		<div id="q02" class="question border bg-light" style="padding: 2rem;margin-top: 2rem;">
 			<p>
 				2. What is the capital of Rhode Island? 
 			</p>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault5" disabled>
-				<label class="form-check-label" for="flexRadioDefault5"> Newport </label> 
-                <!--<input type="range" class="form-range" min="0" max="5" step="0.5" id="range01" disabled>-->
+				<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
+				<label class="form-check-label" for="flexRadioDefault2"> Newport </label> 
+				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range01">
+				<div class="row">
+					<div class="col text-muted">
+						<small>Certain</small> 
+					</div>
+					<div class="col text-end text-muted">
+						<small>Uncertain</small> 
+					</div>
+				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault6" disabled>
-				<label class="form-check-label" for="flexRadioDefault6"> Providence </label> 
-                <!--<input type="range" class="form-range" min="0" max="5" step="0.5" id="range02" disabled>-->
+				<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6">
+				<label class="form-check-label" for="flexRadioDefault2"> Providence </label> 
+				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range02">
+				<div class="row">
+					<div class="col text-muted">
+						<small>Certain</small> 
+					</div>
+					<div class="col text-end text-muted">
+						<small>Uncertain</small> 
+					</div>
+				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault7" checked>
-				<label class="form-check-label" for="flexRadioDefault27"> Warwick </label> 
+				<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault7">
+				<label class="form-check-label" for="flexRadioDefault2"> Warwick </label> 
 				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range03">
 				<div class="row">
 					<div class="col text-muted">
@@ -79,30 +112,43 @@
 				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault8" disabled>
-				<label class="form-check-label" for="flexRadioDefault8"> I don't know. </label> 
+				<input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault8">
+				<label class="form-check-label" for="flexRadioDefault2"> I don't know. </label> 
 			</div>
 		</div>
-		
-		
-		
 		<div id="q03" class="question border bg-light" style="padding: 2rem;margin-top: 2rem;">
 			<p>
 				3. Which quote is attributed to Mark Twain? 
 			</p>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault9" disabled>
-				<label class="form-check-label" for="flexRadioDefault1"> It's not the size of the dog in the fight, it's the size of the fight in the dog. </label> 
-                <!--<input type="range" class="form-range" min="0" max="5" step="0.5" id="range01" disabled>-->
+				<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault9">
+				<label class="form-check-label" for="flexRadioDefault3"> It's not the size of the dog in the fight, it's the size of the fight in the dog. </label> 
+				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range01">
+				<div class="row">
+					<div class="col text-muted">
+						<small>Certain</small> 
+					</div>
+					<div class="col text-end text-muted">
+						<small>Uncertain</small> 
+					</div>
+				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault10" disabled>
-				<label class="form-check-label" for="flexRadioDefault2"> One of the nice things about problems is that a good many of them do not exist except in our imaginations. </label> 
-                <!--<input type="range" class="form-range" min="0" max="5" step="0.5" id="range02" disabled>-->
+				<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault10">
+				<label class="form-check-label" for="flexRadioDefault3"> One of the nice things about problems is that a good many of them do not exist except in our imaginations. </label> 
+				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range02">
+				<div class="row">
+					<div class="col text-muted">
+						<small>Certain</small> 
+					</div>
+					<div class="col text-end text-muted">
+						<small>Uncertain</small> 
+					</div>
+				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault11" checked>
-				<label class="form-check-label" for="flexRadioDefault2"> The greatest way to live with honor in this world is to be what we pretend to be. </label> 
+				<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault11">
+				<label class="form-check-label" for="flexRadioDefault3"> The greatest way to live with honor in this world is to be what we pretend to be. </label> 
 				<input type="range" class="form-range" min="0" max="5" step="0.5" id="range03">
 				<div class="row">
 					<div class="col text-muted">
@@ -114,8 +160,8 @@
 				</div>
 			</div>
 			<div class="form-check border-bottom">
-				<input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault12" disabled>
-				<label class="form-check-label" for="flexRadioDefault12"> I don't know. </label> 
+				<input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault12">
+				<label class="form-check-label" for="flexRadioDefault3"> I don't know. </label> 
 			</div>
 		</div>
 		<a href="success.html" class="btn btn-success btn-lg">Complete Quiz</a> 
