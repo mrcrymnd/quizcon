@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+	<link rel="stylesheet" href="custom.css">
+	<title>Create Question | QuizCon</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="my-quizzes.html"><strong><span class="text-light">QuizCon</span></strong> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item"> <a class="nav-link" aria-current="page" href="my-quizzes.html">My Quizzes</a> </li>
+				<li class="nav-item"> <a class="nav-link disabled" href="#">Reports</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="index.html">Log Out (mar227)</a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container container-content">
+<!-- Create Question -->
+	<h1>
+		Create Question 
+	</h1>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="my-quizzes.html">My Quizzes</a></li>
+			<li class="breadcrumb-item"><a href="edit-quiz.html">Planets</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Question 1</li>
+		</ol>
+	</nav>
+	<form>
+		<div class="row mb-3">
+			<label for="thetextarea-q" class="col-sm-2 col-form-label">Question</label> 
+			<div class="col-sm-10">
+				<textarea class="form-control" id="thetextarea-q"></textarea>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<label for="thetextarea-a" class="col-sm-2 col-form-label">Answer A</label> 
+			<div class="col-sm-10">
+				<textarea class="form-control" id="thetextarea-a"></textarea>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio-correct-a">
+				<label class="form-check-label" for="flexRadio-correct-a"> Correct </label> 
+			</div>
+		</div>
+		<div class="row mb-3">
+			<label for="thetextarea-b" class="col-sm-2 col-form-label">Answer B</label> 
+			<div class="col-sm-10">
+				<textarea class="form-control" id="thetextarea-b"></textarea>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio-correct-b">
+				<label class="form-check-label" for="flexRadio-correct-b"> Correct </label> 
+			</div>
+		</div>
+		<div class="row mb-3">
+			<label for="thetextarea-c" class="col-sm-2 col-form-label">Answer C</label> 
+			<div class="col-sm-10">
+				<textarea class="form-control" id="thetextarea-c"></textarea>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio-correct-c">
+				<label class="form-check-label" for="flexRadio-correct-c"> Correct </label> 
+			</div>
+		</div>
+	</form>
+	<a href="edit-quiz.html" class="btn btn-primary">Save</a> <a href="edit-quiz.html" class="btn btn-secondary">Cancel</a> 
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">
+					Delete 
+				</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+			</div>
+			<div class="modal-body">
+				Are you sure that you want to permanently delete this? 
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger">Delete</button> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+</body>
+</html>

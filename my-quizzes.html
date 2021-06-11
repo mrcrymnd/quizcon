@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+	<link rel="stylesheet" href="custom.css">
+	<title>My Quizzes | QuizCon</title>
+ </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="my-quizzes.html"><strong><span class="text-light">QuizCon</span></strong> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">My Quizzes</a> </li>
+				<li class="nav-item"> <a class="nav-link disabled" href="#">Reports</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="index.html">Log Out (mar227)</a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container container-content">
+<!-- My Quizzes -->
+	<h1>
+		My Quizzes 
+	</h1>
+	<div class="table-responsive">
+		<a href="create-quiz.html" class="btn btn-sm btn-primary float-end">Create Quiz</a> 
+		<table class="table table-striped">
+			<col width="20%"> <col width="30%"> <col width="30%"> <col width="20%"> 
+			<thead>
+				<tr>
+					<th scope="col">Quiz Title</th>
+					<th scope="col">Quiz Description</th>
+					<th scope="col">URL</th>
+					<th scope="col">Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row"><a href="view-quiz.html" target="_blank">Planets</a></th>
+					<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget neque ac elit aliquet bibendum eu eget mauris.</td>
+					<td class="text-muted">http://ctl.columbia.edu</td>
+					<td><a href="view-quiz.html" target="blank" class="btn btn-sm btn-success">View Quiz</button> <a href="edit-quiz.html" class="btn btn-sm btn-warning">Edit Quiz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+</body>
+</html>
