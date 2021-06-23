@@ -50,6 +50,37 @@
 				<textarea class="form-control" id="thetextarea"></textarea>
 			</div>
 		</div>
+		<div class="row mb-3">
+			<label for="dropdown" class="col-sm-2 col-form-label">Level of Difficulty</label> 
+			<div class="col-sm-10">
+				<select class="form-select" aria-label="Default select example" id="dropdown">
+					<option selected>Select One</option>
+					<option value="1">Low</option>
+					<option value="2">Medium</option>
+					<option value="3">High</option>
+					<option value="4">Random</option>
+				</select>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<label for="options" class="col-sm-2 col-form-label">Question Settings</label> 
+			<div class="col-sm-10">
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+					<label class="form-check-label" for="flexSwitchCheckChecked">Allow multiple attempts</label> 
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+					<label class="form-check-label" for="flexSwitchCheckChecked">Show the correct answers on submission</label> 
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+					<label class="form-check-label" for="flexSwitchCheckChecked">Randomize the quiz questions</label> 
+				</div>
+			</div>
+		</div>
+		
+		
 		<a href="my-quizzes.html" class="btn btn-primary">Save</a> <a href="my-quizzes.html" class="btn btn-secondary">Cancel</a> 
 	</form>
 </div>
