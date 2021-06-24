@@ -11,12 +11,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <!-- Custom CSS -->
 	<link rel="stylesheet" href="custom.css">
-	<title>Create Quiz | QuizCon</title>
+	<title>Edit Question | QuizCon</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><strong><span class="text-light">QuizCon</span></strong> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+		<a class="navbar-brand" href="my-quizzes.html"><strong><span class="text-light">QuizCon</span></strong> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item"> <a class="nav-link" aria-current="page" href="my-quizzes.html">My Quizzes</a> </li>
@@ -28,61 +28,50 @@
 	</div>
 </nav>
 <div class="container container-content">
-<!-- Create Quiz -->
+<!-- Edit Question -->
 	<h1>
-		Create Quiz 
+		Edit Question 
 	</h1>
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
-			<li class="breadcrumb-item active" aria-current="page">My Quizzes</li>
+			<li class="breadcrumb-item"><a href="my-quizzes.html">My Quizzes</a></li>
+			<li class="breadcrumb-item"><a href="edit-quiz.html">Planets</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Question 3</li>
 		</ol>
 	</nav>
 	<form>
 		<div class="row mb-3">
-			<label for="inputEmail3" class="col-sm-2 col-form-label">Title</label> 
+			<label for="thetextarea-q" class="col-sm-2 col-form-label">Question</label> 
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" value="Quiz 2 Title">
+				<textarea class="form-control" id="thetextarea-q">How many planets are in our solar system?</textarea>
 			</div>
 		</div>
 		<div class="row mb-3">
-			<label for="thetextarea" class="col-sm-2 col-form-label">Description</label> 
+			<label for="thetextarea-a" class="col-sm-2 col-form-label">Answer A</label> 
 			<div class="col-sm-10">
-				<textarea class="form-control" id="thetextarea">Quiz 2 Description</textarea>
+				<textarea class="form-control" id="thetextarea-a">Six</textarea>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio-correct-a">
+				<label class="form-check-label" for="flexRadio-correct-a"> Correct </label> 
 			</div>
 		</div>
 		<div class="row mb-3">
-			<label for="dropdown" class="col-sm-2 col-form-label">Level of Difficulty</label> 
+			<label for="thetextarea-b" class="col-sm-2 col-form-label">Answer B</label> 
 			<div class="col-sm-10">
-				<select class="form-select" aria-label="Default select example" id="dropdown">
-					<option selected>Select One</option>
-					<option value="1">Easy</option>
-					<option value="2">Medium</option>
-					<option value="3">Hard</option>
-					<option value="4">Custom</option>
-				</select>
+				<textarea class="form-control" id="thetextarea-b">Seven</textarea>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio-correct-b">
+				<label class="form-check-label" for="flexRadio-correct-b"> Correct </label> 
 			</div>
 		</div>
 		<div class="row mb-3">
-			<label for="options" class="col-sm-2 col-form-label">Question Settings</label> 
+			<label for="thetextarea-c" class="col-sm-2 col-form-label">Answer C</label> 
 			<div class="col-sm-10">
-				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-					<label class="form-check-label" for="flexSwitchCheckChecked">Allow multiple attempts</label> 
-				</div>
-				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-					<label class="form-check-label" for="flexSwitchCheckChecked">Show the correct answers on submission</label> 
-				</div>
-				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-					<label class="form-check-label" for="flexSwitchCheckChecked">Randomize the quiz questions</label> 
-				</div>
+				<textarea class="form-control" id="thetextarea-c">Eight</textarea>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio-correct-c" checked>
+				<label class="form-check-label" for="flexRadio-correct-c"> Correct </label> 
 			</div>
 		</div>
-		
-		
-		<a href="my-quizzes.html" class="btn btn-primary">Save</a> <a href="my-quizzes.html" class="btn btn-secondary">Cancel</a> 
 	</form>
+	<a href="edit-quiz.html" class="btn btn-primary">Save</a> <a href="edit-quiz.html" class="btn btn-secondary">Cancel</a> <a href="#" class="btn btn-danger float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete Question</a> 
 </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
