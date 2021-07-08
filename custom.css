@@ -36,3 +36,5 @@ h1
 ol { list-style-type: upper-alpha; }
 .breadcrumb { font-weight: 300; }
 img.sort { cursor: move; }
+
+#footer-logo {width: 300px;}
