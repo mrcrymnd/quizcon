@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<title>Planets</title>
+	<style>
+		ol { list-style-type: upper-alpha; }
+		
+		.row
+		{
+			margin: 2rem;
+			padding: 2rem;
+		}
+		
+		* { font-family: 'Lato', sans-serif; }
+		
+		.choicebox
+		{
+			background-image: url(triangle.svg);
+			width: 350px;
+			height: 350px;
+			position: relative;
+		}
+		
+		.form-check
+		{
+			position: absolute;
+			width: 1px;
+			height: 1px;
+		}
+		
+		#answer01-01, #answer01-02, #answer01-03
+		{
+			right: 160px;
+			top: 74px;
+		}
+		
+		#answer02-01, #answer02-02, #answer02-03
+		{
+			right: 130px;
+			top: 120px;
+		}
+		
+		#answer03-01, #answer03-02, #answer03-03
+		{
+			right: 188px;
+			top: 120px;
+		}
+		
+		#answer04-01, #answer04-02, #answer04-03
+		{
+			right: 215px;
+			top: 166px;
+		}
+		
+		#answer05-01, #answer05-02, #answer05-03
+		{
+			right: 103px;
+			top: 166px;
+		}
+		
+		#answer06-01, #answer06-02, #answer06-03
+		{
+			right: 160px;
+			top: 204px;
+		}
+		
+		#answer07-01, #answer07-02, #answer07-03
+		{
+			right: 78px;
+			top: 211px;
+		}
+		
+		#answer08-01, #answer08-02, #answer08-03
+		{
+			right: 240px;
+			top: 211px;
+		}
+		
+		#answer09-01, #answer09-02, #answer09-03
+		{
+			right: 269px;
+			top: 257px;
+		}
+		
+		#answer10-01, #answer10-02, #answer10-03
+		{
+			right: 214px;
+			top: 257px;
+		}
+		
+		#answer11-01, #answer11-02, #answer11-03
+		{
+			right: 160px;
+			top: 257px;
+		}
+		
+		#answer12-01, #answer12-02, #answer12-03
+		{
+			right: 102px;
+			top: 257px;
+		}
+		
+		#answer13-01, #answer13-02, #answer13-03
+		{
+			right: 50px;
+			top: 257px;
+		}
+</style>
+ </head>
+<body style="background-color: #eee;">
+<div class="container">
+
+<div class="alert alert-warning" role="alert">
+
+    <button onclick="javascript:window.close('','_parent','');" class="btn btn-warning btn-sm float-end">Close</button>
+    This is a preview of what your students will see. 
+</div>
+
+    <h1>
+    The Ultimate Planets Quiz
+    </h1>
+    
+    <p class="lead">How much do you know about the solar system? Find out in this cosmic quiz!</p>
+ 
+    <!-- none -->
+    <table class="table table-sm table-light">
+    
+        <thead>
+            <tr class="table-success">
+                <th scope="col" colspan="2">No Consequences for Each Answer</th>
+            </tr>
+            <tr class="table-success">
+                <th scope="col">Number of Points</th>
+                <th scope="col">For</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th scope="row">5</th>
+                <td>Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Confidence Towards Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Middle Confidence on Side of Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Confidence Toward Incorrect Answer on Side of Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">0</th>
+                <td>Incorrect Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">0</th>
+                <td>Different Confidence Levels between Two Wrong Answers</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>D. I don't know.</td>
+            </tr>
+        </tbody>
+        
+    </table>
+ 
+    <!-- moderate -->
+    <table class="table table-sm table-light">
+    
+        <thead>
+            <tr class="table-warning">
+                <th scope="col" colspan="2">Moderate Consequences for Each Answer</th>
+            </tr>
+            <tr class="table-warning">
+                <th scope="col">Number of Points</th>
+                <th scope="col">For</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th scope="row">3</th>
+                <td>Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Confidence Towards Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Middle Confidence on Side of Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">-1</th>
+                <td>Confidence Toward Incorrect Answer on Side of Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">-2</th>
+                <td>Incorrect Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">-2</th>
+                <td>Different Confidence Levels between Two Wrong Answers</td>
+            </tr>
+            <tr>
+                <th scope="row">0</th>
+                <td>D. I don't know.</td>
+            </tr>
+        </tbody>
+        
+    </table>
+ 
+    <!-- high -->
+    <table class="table table-sm table-light">
+    
+        <thead>
+            <tr class="table-danger">
+                <th scope="col" colspan="2">High Consequences for Each Answer</th>
+            </tr>
+            <tr class="table-danger">
+                <th scope="col">Number of Points</th>
+                <th scope="col">For</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th scope="row">3</th>
+                <td>Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Confidence Towards Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Middle Confidence on Side of Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">-1</th>
+                <td>Confidence Toward Incorrect Answer on Side of Correct Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">-5</th>
+                <td>Incorrect Answer</td>
+            </tr>
+            <tr>
+                <th scope="row">-5</th>
+                <td>Different Confidence Levels between Two Wrong Answers</td>
+            </tr>
+            <tr>
+                <th scope="row">0</th>
+                <td>D. I don't know.</td>
+            </tr>
+        </tbody>
+        
+    </table>
+<h2>Try It Out</h2>
+	<form>
+		<div class="row bg-light">
+			<div class="col-md-6">
+				<p>
+					<strong>Sample Question</strong> 
+				</p>
+				<p>
+					What planet lacks an internal magnetic field?
+				</p>
+				<ol>
+					<li class="border-top p-2">Jupiter</li>
+					<li class="border-top p-2">Mercury</li>
+					<li class="border-top p-2">Venus</li>
+					<li class="border-top p-2">I don't know.</li>
+				</ol>
+			</div>
+			<div class="col-md-6">
+				<div class="choicebox float-end">
+					<div class="form-check" id="answer01-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer02-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer03-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer04-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer05-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer06-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer07-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer08-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer09-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer10-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer11-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer12-01">
+						<input class="form-check-input" type="radio" name="radiodefault">
+					</div>
+					<div class="form-check" id="answer13-01">
+						<input class="form-check-input" type="radio" name="radiodefault" checked>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<a href="view-quiz-full.html" class="btn btn-primary">Start Quiz</a>
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+</body>
+</html>
