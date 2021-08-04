@@ -20,7 +20,7 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item"> <a class="nav-link" aria-current="page" href="my-quizzes.html">My Quizzes</a> </li>
-				<li class="nav-item"> <a class="nav-link disabled" href="#">Reports</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="reports.html">Reports</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="about.html">About QuizCon</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="index.html">Log Out (mar227)</a> </li>
 			</ul>
@@ -81,33 +81,25 @@
 				<input type="text" class="form-control" id="attempts" value="03" size="2" maxlength="2">
 			</div>
 		</div>
-		
-		
 		<div class="row mb-3">
 			<label for="options" class="col-sm-2 col-form-label">Show Students Correct Answers for Each Question</label> 
 			<div class="col-sm-10">
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-   Never
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    Immediately after quiz submission
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-  <label class="form-check-label" for="flexRadioDefault3">
-    On given date <input type="text" class="form-control" id="date" value="MM/DD/YYYY" size="10" maxlength="10">
-  </label>
-</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+					<label class="form-check-label" for="flexRadioDefault1"> Never </label> 
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+					<label class="form-check-label" for="flexRadioDefault2"> Immediately after quiz submission </label> 
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+					<label class="form-check-label" for="flexRadioDefault3"> On given date 
+					<input type="text" class="form-control" id="date" value="MM/DD/YYYY" size="10" maxlength="10">
+					</label> 
+				</div>
 			</div>
 		</div>
-		
-		
 		<div class="row mb-3">
 			<label for="options" class="col-sm-2 col-form-label">Additional Settings</label> 
 			<div class="col-sm-10">
@@ -121,12 +113,9 @@
 				</div>
 			</div>
 		</div>
-		
-		
 		<hr />
 		<div class="table-responsive">
-			<a href="create-question.html" class="btn btn-sm btn-primary">Create Question</a> 
-			<a href="view-quiz-start.html" target="_blank" class="btn btn-sm btn-success">View Quiz</a> 
+			<a href="create-question.html" class="btn btn-sm btn-primary">Create Question</a> <a href="view-quiz-start.html" target="_blank" class="btn btn-sm btn-success">View Quiz</a> 
 			<table class="table table-striped">
 				<col width="1%"> <col width="4%"> <col width="40%"> <col width="40%"> <col width="15%"> 
 				<thead>
@@ -139,8 +128,6 @@
 					</tr>
 				</thead>
 				<tbody>
-				
-				
 					<tr>
 						<td><img class="sort" src="icon-sort.svg" class="img-fluid" /></td>
 						<th scope="row">1</th>
@@ -154,8 +141,6 @@
 						</td>
 						<td><a href="edit-question.html" class="btn btn-sm btn-warning">Edit Question</a> </td>
 					</tr>
-				
-				
 					<tr>
 						<td><img class="sort" src="icon-sort.svg" class="img-fluid" /></td>
 						<th scope="row">2</th>
@@ -169,8 +154,6 @@
 						</td>
 						<td><a href="edit-question-2.html" class="btn btn-sm btn-warning">Edit Question</a> </td>
 					</tr>
-				
-				
 					<tr>
 						<td><img class="sort" src="icon-sort.svg" class="img-fluid" /></td>
 						<th scope="row">3</th>
@@ -184,10 +167,6 @@
 						</td>
 						<td><a href="edit-question-3.html" class="btn btn-sm btn-warning">Edit Question</a> </td>
 					</tr>
-					
-					
-					
-					
 				</tbody>
 			</table>
 		</div>
@@ -214,9 +193,9 @@
 	</div>
 </div>
 <footer class="footer mt-auto py-3 text-center">
-  <div class="container">
-    <a href="https://ctl.columbia.edu" target="_blank"><img id="footer-logo" src="logo-black-ctl.svg" alt="CTL logo" /></a>
-  </div>
+	<div class="container">
+		<a href="https://ctl.columbia.edu" target="_blank"><img id="footer-logo" src="logo-black-ctl.svg" alt="CTL logo" /></a> 
+	</div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
 </script>
