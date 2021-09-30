@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Required meta tags -->
-	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
 <!-- Custom CSS -->
 	<link rel="stylesheet" href="custom.css">
 	<title>Reports | QuizCon</title>
@@ -16,48 +16,102 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="my-courses.html"><strong><span class="text-light">QuizCon</span></strong> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+		<a class="navbar-brand" href="my-courses.html"><strong><span class="text-light">QuizCon</span></strong></a> 
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item"> <a class="nav-link" aria-current="page" href="my-quizzes.html">My Quizzes</a> </li>
 				<li class="nav-item"> <a class="nav-link active" href="#">Reports</a> </li>
-				<li class="nav-item"> <a class="nav-link " href="about.html">About QuizCon</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="about.html">About QuizCon</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="index.html">Log Out (mar227)</a> </li>
 			</ul>
 		</div>
 	</div>
 </nav>
 <div class="container-fluid container-content">
-<!-- About QuizCon -->
 	<h1>
 		Quiz Analytics for <strong>Favorite Color</strong> 
 	</h1>
 	<ul class="nav nav-pills nav-fill mb-4">
+		<li class="nav-item"> <a class="nav-link" href="#statistics">Statistics</a> </li>
 		<li class="nav-item"> <a class="nav-link" href="#details">Details</a> </li>
 		<li class="nav-item"> <a class="nav-link" href="#question_analysis">Question Analysis</a> </li>
 		<li class="nav-item"> <a class="nav-link" href="#submission_percentages">Submission Percentages</a> </li>
 	</ul>
-	<a name="details"></a> 
+	<a name="statistics" id="statistics"></a> 
+	<h2 class="mt-4">
+		Statistics 
+	</h2>
+	<div class="row mt-4">
+		<div class="col-md-3">
+			<div class="card text-center">
+				<div class="card-body">
+					<h3 class="card-title display-5">
+						6 
+					</h3>
+				</div>
+				<div class="card-footer">
+					Mean 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-center">
+				<div class="card-body">
+					<h3 class="card-title display-5">
+						6.5 
+					</h3>
+				</div>
+				<div class="card-footer">
+					Median 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-center">
+				<div class="card-body">
+					<h3 class="card-title display-5">
+						0 
+					</h3>
+				</div>
+				<div class="card-footer">
+					Mode 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-center">
+				<div class="card-body">
+					<h3 class="card-title display-5">
+						3.92 
+					</h3>
+				</div>
+				<div class="card-footer">
+					Standard Deviation 
+				</div>
+			</div>
+		</div>
+	</div>
+	<a name="details" id="details"></a> 
 	<h2 class="mt-4">
 		Details 
 	</h2>
 	<div class="row mt-4">
-		<div class="col-md-4">
-			<div class="card bg-dark text-center">
+		<div class="col-md-3">
+			<div class="card text-center">
 				<div class="card-body">
-					<h3 class="card-title display-1 text-white">
+					<h3 class="card-title display-5">
 						2 
 					</h3>
 				</div>
-				<div class="card-footer text-white">
+				<div class="card-footer">
 					Total Questions 
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<div class="card bg-light text-center">
+		<div class="col-md-3">
+			<div class="card text-center">
 				<div class="card-body">
-					<h3 class="card-title display-1">
+					<h3 class="card-title display-5">
 						4 
 					</h3>
 				</div>
@@ -66,91 +120,58 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<ul class="list-group">
-				<li class="list-group-item d-flex justify-content-between align-items-center"> Scoring Scheme <span class="badge bg-primary rounded-pill">No Consequences</span> </li>
-				<li class="list-group-item d-flex justify-content-between align-items-center"> Student Answer View <span class="badge bg-primary rounded-pill">Immediately After Submission</span> </li>
-			</ul>
-		</div>
-	</div>
-	<hr />
-	<div class="row mt-4">
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="card text-center">
 				<div class="card-body">
-					<h3 class="card-title display-1">
-						6 
-					</h3>
-				</div>
-				<div class="card-footer ">
-					Mean 
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card text-center">
-				<div class="card-body">
-					<h3 class="card-title display-1">
-						6.5 
-					</h3>
-				</div>
-				<div class="card-footer ">
-					Median 
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card text-center">
-				<div class="card-body">
-					<h3 class="card-title display-1">
+					<h3 class="card-title display-5">
 						0 
 					</h3>
 				</div>
-				<div class="card-footer ">
-					Mode 
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row mt-4">
-		<div class="col-md-4">
-			<div class="card text-center">
-				<div class="card-body">
-					<h3 class="card-title display-1">
-						3.92 
-					</h3>
-				</div>
-				<div class="card-footer ">
-					Standard Deviation 
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card text-center">
-				<div class="card-body">
-					<h3 class="card-title display-1">
-						0 
-					</h3>
-				</div>
-				<div class="card-footer ">
+				<div class="card-footer">
 					Minimum Points Earned 
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="card text-center">
 				<div class="card-body">
-					<h3 class="card-title display-1">
+					<h3 class="card-title display-5">
 						10 
 					</h3>
 				</div>
 				<div class="card-footer">
-					Maximum Points Earned 
+					Minimum Points Earned 
 				</div>
 			</div>
 		</div>
 	</div>
-	<a name="question_analysis"></a> 
+	<div class="row mt-4">
+		<div class="col-md-6">
+			<div class="card border-success text-center">
+				<div class="card-body">
+					<h3 class="card-title text-success">
+						No Consequences 
+					</h3>
+				</div>
+				<div class="card-footer">
+					Scoring Scheme 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card border-success text-center">
+				<div class="card-body">
+					<h3 class="card-title text-success">
+						Immediately After Submission 
+					</h3>
+				</div>
+				<div class="card-footer">
+					Student Answer View 
+				</div>
+			</div>
+		</div>
+	</div>
+	<a name="question_analysis" id="question_analysis"></a> 
 	<h2 class="mt-4">
 		Question Analysis 
 	</h2>
@@ -158,11 +179,11 @@
 		<div class="col-md-4">
 			<div class="card bg-success">
 				<div class="card-header text-white">
-					Most Correct Answers
+					Most Correct Answers 
 				</div>
 				<div class="card-body">
 					<p class="card-text text-white">
-						What is your favorite color?
+						What is your favorite color? 
 					</p>
 				</div>
 			</div>
@@ -170,11 +191,11 @@
 		<div class="col-md-4">
 			<div class="card bg-danger">
 				<div class="card-header text-white">
-					Most Incorrect Answers
+					Most Incorrect Answers 
 				</div>
 				<div class="card-body">
 					<p class="card-text text-white">
-					Favorite Other Color
+						Favorite Other Color 
 					</p>
 				</div>
 			</div>
@@ -182,46 +203,107 @@
 		<div class="col-md-4">
 			<div class="card bg-secondary">
 				<div class="card-header text-white">
-					Most "I Don't Know" Answers
+					Most "I Don't Know" Answers 
 				</div>
 				<div class="card-body">
 					<p class="card-text text-white">
-					Favorite Other Color
+						Favorite Other Color 
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<a name="submission_percentages"></a> 
+	<a name="submission_percentages" id="submission_percentages"></a> 
 	<h2 class="mt-4">
 		Submission Percentages 
 	</h2>
-	<div class="row mt-4">
-		<div class="col-md-4">
-   <div class="card">
-      <img src="triangle.svg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">What is your favorite color?</p>
-      </div>
-    </div>
+	<div class="card bg-light mt-4">
+		<div class="card-header">
+			What is your favorite color? 
 		</div>
-		<div class="col-md-4">
-   <div class="card">
-      <img src="triangle.svg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Favorite other color</p>
-      </div>
-    </div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="triangle-key.svg" class="rounded" alt="key"> 
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>25.0%</strong> <span class="badge bg-dark rounded-pill">A1</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">A2</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">A3</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>25.0%</strong> <span class="badge bg-dark rounded-pill">A4</span></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>25.0%</strong> <span class="badge bg-dark rounded-pill">B1</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>25.0%</strong> <span class="badge bg-dark rounded-pill">B2</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">B3</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">B4</span></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">C1</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">C2</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">C3</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">C4</span></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">D</span></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-4">
- 		</div>
+	</div>
+	<div class="card bg-light mt-4">
+		<div class="card-header">
+			Favorite other color 
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="triangle-key.svg" class="rounded" alt="key"> 
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>33.3%</strong> <span class="badge bg-dark rounded-pill">A1</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">A2</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">A3</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">A4</span></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">B1</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">B2</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">B3</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">B4</span></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>33.3%</strong> <span class="badge bg-dark rounded-pill">C1</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">C2</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">C3</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center"><strong>33.3%</strong> <span class="badge bg-dark rounded-pill">C4</span></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-muted">0.0%</span> <span class="badge bg-dark rounded-pill">D</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <footer class="footer mt-auto py-3 text-center">
 	<div class="container">
-		<a href="https://ctl.columbia.edu" target="_blank"><img id="footer-logo" src="logo-black-ctl.svg" alt="CTL logo" /></a> 
+		<a href="https://ctl.columbia.edu" target="_blank"><img id="footer-logo" src="logo-black-ctl.svg" alt="CTL logo"></a> 
 	</div>
-</footer>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
 </script>
