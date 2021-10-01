@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
 <!-- Custom CSS -->
 	<link rel="stylesheet" href="custom.css">
-	<title>Reports | QuizCon</title>
+	<title>Analytics for Marc Quiz | QuizCon</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -28,17 +28,20 @@
 </nav>
 <div class="container-fluid container-content">
 	<h1>
-		Quiz Analytics for <strong>Favorite Color</strong> 
+		Analytics for <strong>Marc Quiz</strong> 
 	</h1>
+	<p>
+		Scoring Scheme: <strong class="text-success"> No Consequences </strong> <span class="text-muted">&bull;</span>  Student Answer View: <strong class="text-success"> Immediately After Submission </strong> 
+	</p>
 	<ul class="nav nav-tabs nav-fill mb-4">
-		<li class="nav-item"> <a class="nav-link" href="#statistics">Statistics</a> </li>
-		<li class="nav-item"> <a class="nav-link" href="#details">Details</a> </li>
-		<li class="nav-item"> <a class="nav-link" href="#question_analysis">Question Analysis</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="#statistics">Quiz Statistics</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="#insights">Insights</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="#percentages">Answer Percentages</a> </li>
 	</ul>
 	<section style="margin: 4em 0em 4em 0em;">
 		<a name="statistics" id="statistics"></a> 
 		<h2 class="mt-4">
-			Statistics 
+			Quiz Statistics 
 		</h2>
 		<div class="row mt-4">
 			<div class="col-md-3">
@@ -48,7 +51,7 @@
 							6 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Mean 
 					</div>
 				</div>
@@ -60,7 +63,7 @@
 							6.5 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Median 
 					</div>
 				</div>
@@ -72,7 +75,7 @@
 							0 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Mode 
 					</div>
 				</div>
@@ -84,18 +87,12 @@
 							3.92 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Standard Deviation 
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<section style="margin: 4em 0em 4em 0em;">
-		<a name="details" id="details"></a> 
-		<h2 class="mt-4">
-			Details 
-		</h2>
 		<div class="row mt-4">
 			<div class="col-md-3">
 				<div class="card text-center">
@@ -104,7 +101,7 @@
 							2 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Total Questions 
 					</div>
 				</div>
@@ -116,7 +113,7 @@
 							4 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Quiz Submissions 
 					</div>
 				</div>
@@ -128,7 +125,7 @@
 							0 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Minimum Points Earned 
 					</div>
 				</div>
@@ -140,43 +137,17 @@
 							10 
 						</h3>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer bg-dark text-white">
 						Minimum Points Earned 
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-md-6">
-				<div class="card border-success text-center">
-					<div class="card-body">
-						<h3 class="card-title text-success">
-							No Consequences 
-						</h3>
-					</div>
-					<div class="card-footer">
-						Scoring Scheme 
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card border-success text-center">
-					<div class="card-body">
-						<h3 class="card-title text-success">
-							Immediately After Submission 
-						</h3>
-					</div>
-					<div class="card-footer">
-						Student Answer View 
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section style="margin: 4em 0em 4em 0em;">
-		<a name="question_analysis" id="question_analysis"></a> 
+		<a name="insights" id="insights"></a> 
 		<h2 class="mt-4">
-			Question Analysis 
+			Insights 
 		</h2>
 		<div class="row mt-4">
 			<div class="col-md-4">
@@ -216,6 +187,12 @@
 				</div>
 			</div>
 		</div>
+	</section>
+	<section style="margin: 4em 0em 4em 0em;">
+		<a name="question_analysis" id="question_analysis"></a> 
+		<h2 class="mt-4">
+			Answer Percentages 
+		</h2>
 		<a name="q01"></a> 
 		<div class="card bg-light mt-4">
 			<div class="card-header bg-dark text-white">
